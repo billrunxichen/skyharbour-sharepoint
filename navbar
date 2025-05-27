@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    .nav {
+      background: red; color: white; padding: 10px;
+      display: flex; gap: 20px;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      background: white;
+      color: black;
+      min-width: 150px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 10px; display: block;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div>Sky Harbour</div>
+    <a href="/sites/yoursite/SitePages/Home.aspx" style="color:white">Home</a>
+    <div class="dropdown">
+      <span>Pages ▾</span>
+      <div class="dropdown-content">
+        <a href="/sites/yoursite/SitePages/About.aspx">About</a>
+        <a href="/sites/yoursite/SitePages/Team.aspx">Team</a>
+        <a href="/sites/yoursite/SitePages/Contact.aspx">Contact</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
