@@ -11,7 +11,119 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
-https://github.com/billrunxichen/skyharbour-sharepoint/settings/pages
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      background-color: #b30000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 32px;
+      height: 60px;
+      width: 100vw;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .navbar .brand {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .navbar .menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    .navbar a:hover {
+      opacity: 0.85;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown > a::after {
+      content: " ▾";
+      font-size: 12px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      min-width: 200px;
+      z-index: 1000;
+      padding: 10px 0;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 20px;
+      color: #b30000;
+      text-decoration: none;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .home-icon {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="brand">Sky Harbour</div>
+    <div class="menu">
+      <a href="/"><span class="home-icon">🏠</span>Home</a>
+      <div class="dropdown">
+        <a href="#">Pages</a>
+        <div class="dropdown-content">
+          <a href="#">Finance</a>
+          <a href="#">Site Acquisitions</a>
+          <a href="#">Construction</a>
+          <a href="#">Leasing</a>
+          <a href="#">Operations</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 
 
 
