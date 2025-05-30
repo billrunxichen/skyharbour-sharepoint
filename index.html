@@ -4,7 +4,97 @@
   <title>Sky Harbour SharePoint Portal</title>
 </head>
 <body>
-  <h1>Welcome to the Sky Harbour Intranet!</h1>
-  <p>This site is under construction.</p>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #003366;
+      padding: 10px 20px;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar .brand {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar .menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #003366;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .home-icon {
+      font-size: 18px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="brand">🌤️ Sky Harbour</div>
+    <div class="menu">
+      <a href="/"><span class="home-icon">🏠</span>Home</a>
+      <div class="dropdown">
+        <a href="#">Pages ▾</a>
+        <div class="dropdown-content">
+          <a href="#">HR Portal</a>
+          <a href="#">IT Helpdesk</a>
+          <a href="#">Finance Tools</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </body>
 </html>
